@@ -1,4 +1,4 @@
-package Admin.Login;
+package Admin.Testcases.Login;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,32 +12,6 @@ import java.time.Duration;
 public class T1NormalLogin {
     WebDriver driver;
 
-    @BeforeTest
-    public void createDriver() {
-        driver = new ChromeDriver();
-        // Get the screen resolution for the second monitor
-        GraphicsDevice[] screens = GraphicsEnvironment.getLocalGraphicsEnvironment().getScreenDevices();
-
-        if (screens.length > 1) {
-            // If there's more than one screen, use the second screen
-            Rectangle secondScreenBounds = screens[1].getDefaultConfiguration().getBounds();
-            // Set the browser window's position to the second screen
-            driver.manage().window().setPosition(new org.openqa.selenium.Point(
-                    secondScreenBounds.x + 100,
-                    secondScreenBounds.y + 100));
-        } else {
-            System.out.println("Only one screen detected, opening browser on the primary screen.");
-        }
-
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-    }
-
-    //@BeforeMethod
-//public void accessPage(){
-//    driver.get("http://dev3.vitex.asia:8009/admin/login");
-//}
     @Test(priority = 1)
     public void checkCorrectPage() {
         driver.get("http://dev3.vitex.asia:8009/admin/login");
