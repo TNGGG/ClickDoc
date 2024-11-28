@@ -44,7 +44,7 @@ waitForElementVisible(by);
         }
 
         public static void waitForElementVisible(By by) {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
             wait.until(ExpectedConditions.visibilityOfElementLocated(by));
         }
 

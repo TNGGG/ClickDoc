@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 public class T1CustomersPage extends BaseTest {
     Customers Customers;
+
     @Test(priority = 1)
     public void login() {
         driver.get("http://dev3.vitex.asia:8009/admin/login");
@@ -16,14 +17,35 @@ public class T1CustomersPage extends BaseTest {
     }
 
     @Test(priority = 2)
-    public void accessCustomersPage(){
+    public void accessCustomersPage() {
         Customers = new Customers(driver);
         Customers.clickCustomerMenu();
+        Customers.verifyAtCustomersPage();
     }
+
     @Test(priority = 3)
-    public void accessAddNewCustomerPage(){
-        Customers = new Customers(driver);
-       Customers.clickAddNewCustomerButton();
+    public void accessAddNewCustomerPage() {
+        Customers.clickAddNewCustomerButton();
         Customers.verifyAtAddNewCustomerPage();
+    }
+
+    //Show/Hide Columns
+    @Test(priority = 4)
+
+    public void clickToShowHideIDColumns() {
+        Customers.clickCustomerMenu();
+        Customers.clickColvisDropdown();
+
+        // Check if the element is 'active' or not in COLVIS DROPDOWN
+        boolean isActive = driver.findElements(By.xpath("//li[(@data-cv-idx='0') and contains(@class, 'active')]")).size() > 0;
+        // Check if the element is 'active' or not in GRID VIEW after clicking in colvis dropdown
+
+        if (isActive) {
+            Customers.clickToShowHideColumns(By.xpath("//li[@data-cv-idx='0']"));
+            Customers.verifyColumnInvisibility(By.xpath("//li[@data-cv-idx='0']"));
+        } else {
+            Customers.clickToShowHideColumns(By.xpath("//li[@data-cv-idx='0']"));
+            Customers.verifyColumnVisibility(By.xpath("//li[@data-cv-idx='0']"));
+        }
     }
 }

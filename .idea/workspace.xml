@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8929ab5-95f5-44e9-bf3e-30b02611bcf4" name="Changes" comment="Login module added">
-      <change afterPath="$PROJECT_DIR$/src/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Admin/Pages/Customers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Admin/Pages/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Common/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GenericFunc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asia/dev3/vitex/Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Admin/Customers/T1CustomersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Admin/Testcases/Customers/T1CustomersPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Admin/Login/T1NormalLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Admin/Testcases/Login/T1NormalLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Admin/Login/T2MFALogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Admin/Testcases/Login/T2MFALogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/ChayTCs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestExecution.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/asia/dev3/vitex/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asia/dev3/vitex/Actions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Admin/Pages/Customers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Admin/Pages/Customers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Admin/Testcases/Customers/T1CustomersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Admin/Testcases/Customers/T1CustomersPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +58,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.T1CustomersPage.clickToShowHideIDColumns.executor": "Debug",
     "TestNG.T1CustomersPage.executor": "Run",
     "TestNG.T1NormalLogin (1).executor": "Run",
     "TestNG.T1NormalLogin.blankEmail.executor": "Run",
@@ -78,7 +70,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager" selected="TestNG.T1CustomersPage">
@@ -93,6 +85,24 @@
       <option name="PACKAGE_NAME" value="Admin.Testcases.Customers" />
       <option name="MAIN_CLASS_NAME" value="Admin.Testcases.Customers.T1CustomersPage" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T1CustomersPage.clickToShowHideIDColumns" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MavenTestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Admin.Testcases.Customers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Admin.Testcases.Customers" />
+      <option name="MAIN_CLASS_NAME" value="Admin.Testcases.Customers.T1CustomersPage" />
+      <option name="METHOD_NAME" value="clickToShowHideIDColumns" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -167,24 +177,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T1NormalLogin.blankEmail" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ClickDocAutoTestScripts" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Admin.Customers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Admin.Login" />
-      <option name="MAIN_CLASS_NAME" value="Admin.Login.T1NormalLogin" />
-      <option name="METHOD_NAME" value="blankEmail" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="T1NormalLogin.blankPassword" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ClickDocAutoTestScripts" />
       <extension name="coverage">
@@ -206,10 +198,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.T1CustomersPage" />
+        <item itemvalue="TestNG.T1CustomersPage.clickToShowHideIDColumns" />
         <item itemvalue="TestNG.T1NormalLogin (1)" />
         <item itemvalue="TestNG.T1NormalLogin" />
         <item itemvalue="TestNG.T1NormalLogin.blankPassword" />
-        <item itemvalue="TestNG.T1NormalLogin.blankEmail" />
       </list>
     </recent_temporary>
   </component>
@@ -272,21 +264,5 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Login module added" />
     <option name="LAST_COMMIT_MESSAGE" value="Login module added" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Admin/Testcases/Customers/T1CustomersPage.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Admin/Testcases/Customers/T1CustomersPage.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
