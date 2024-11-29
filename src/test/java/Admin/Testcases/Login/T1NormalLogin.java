@@ -93,9 +93,4 @@ public class T1NormalLogin {
 
         Assert.assertEquals(actualErrorMessage, expectedErrorMessage);
     }
-
-    @AfterTest
-    public void closeDriver() {
-        driver.quit();
-    }
 }

@@ -29,7 +29,7 @@ public class T1CustomersPage extends BaseTest {
         Customers.verifyAtAddNewCustomerPage();
     }
 
-    //Show/Hide Columns
+    //Show/Hide Columns. For now write for ID column only
     @Test(priority = 4)
 
     public void clickToShowHideIDColumns() {
@@ -47,5 +47,11 @@ public class T1CustomersPage extends BaseTest {
             Customers.clickToShowHideColumns(By.xpath("//li[@data-cv-idx='0']"));
             Customers.verifyColumnVisibility(By.xpath("//li[@data-cv-idx='0']"));
         }
+    }
+
+    //Restore colvis
+    @Test(priority = 5)
+    public void restoreColvis(){
+
     }
 }
